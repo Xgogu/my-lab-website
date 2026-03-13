@@ -1,21 +1,30 @@
 ---
 ---
 
-# Lab Website Template
+# 欢迎来到我们的实验室
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
+我们专注于 **AI for Science、计算生物学、数据驱动研究**。
+这个网站用于展示研究成果、开源项目、团队成员和最新动态。
+
+如果你希望合作、加入团队或交流想法，欢迎随时联系。
 
 {%
   include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
+  link="research"
+  text="查看研究方向"
+  icon="fa-solid fa-flask"
 %}
 {%
   include button.html
   type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
+  text="GitHub 项目"
+  link="https://github.com/Xgogu/my-lab-website"
+%}
+{%
+  include button.html
+  link="contact"
+  text="联系我"
+  icon="fa-regular fa-paper-plane"
 %}
 
 {% include section.html %}
@@ -24,7 +33,8 @@ Spend less time worrying about managing a website and citations, and more time r
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+我们聚焦可复现科研与跨学科问题，结合机器学习与生物医学数据，
+探索更高效、可解释、可落地的研究方法。
 
 {%
   include button.html
@@ -39,15 +49,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/share.jpg"
   link="research"
-  title="Our Research"
+  title="Research"
   text=text
 %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+这里整理了进行中的课题、可复用工具和数据资源，
+方便快速了解我们正在解决的关键问题与进展。
 
 {%
   include button.html
@@ -62,17 +73,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/background.jpg"
   link="projects"
-  title="Our Projects"
+  title="Projects"
   flip=true
-  style="bare"
   text=text
 %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+我们是一支开放、互助、重视成长的团队。
+欢迎学生、开发者和研究者参与合作与交流。
 
 {%
   include button.html
@@ -89,6 +100,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include feature.html
   image="images/photo.jpg"
   link="team"
-  title="Our Team"
+  title="Team"
   text=text
 %}
